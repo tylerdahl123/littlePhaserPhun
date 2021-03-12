@@ -11,6 +11,8 @@ gameScene.preload = function(){
 gameScene.create = function(){
     let background = this.add.sprite(0,0, 'background');//2 dimensional coordinate system...origin is in the top left corner of the game. 
     background.setOrigin(0,0);
+    let player = this.add.sprite(70,180, 'player');
+    // background.setPosition(640/2, 360/2);
 }
 
 
