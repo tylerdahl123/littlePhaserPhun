@@ -12,14 +12,22 @@ gameScene.preload = function(){
 gameScene.create = function(){
     let background = this.add.sprite(0,0, 'background');//2 dimensional coordinate system...origin is in the top left corner of the game. 
     background.setOrigin(0,0);
+
     let player = this.add.sprite(70,180, 'player');
     player.depth = 1; 
     player.setScale(1);
+
     let enemy1 = this.add.sprite(250, 180, 'enemy');
     enemy1.setScale(0.5);
+    enemy1.flipX= true;
 
     let enemy2 = this.add.sprite(450, 180, 'enemy');
     enemy2.setScale(0.5);
+    enemy2.flipX=true;
+
+    let enemy3 = this.add.sprite(350, 180, 'enemy');
+    enemy3.setScale(0.5);
+    enemy3.flipX=true;
     //depth allows things to be pulled up or down in the rendering order
     //to get sprite scale you have to look at the properties in the image through windows explorer
     // player.x = 10;
